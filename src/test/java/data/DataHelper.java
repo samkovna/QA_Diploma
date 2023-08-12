@@ -134,4 +134,8 @@ public class DataHelper {
     public static Card getCardCVCEmpty() {
         return new Card(getApprovedCardNumber(), getCurrentMonth(), getNextYear(), getName(), "");
     }
+
+    public static Card getCardRandomCardNumber() {
+        return new Card("1234_5678_9876_5432", getCurrentMonth(), getNextYear(), getName(), getCVC());
+    }
 }

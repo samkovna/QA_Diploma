@@ -25,8 +25,8 @@ dependencies {
     testImplementation 'mysql:mysql-connector-java:8.0.33'
     testImplementation 'com.github.javafaker:javafaker:1.0.2'
     testImplementation 'commons-dbutils:commons-dbutils:1.7'
-    testImplementation 'com.codeborne:selenide:6.12.3'
-    testImplementation 'io.qameta.allure:allure-selenide:2.21.0'
+    testImplementation 'com.codeborne:selenide:6.13.0'
+    testImplementation 'io.qameta.allure:allure-selenide:2.20.1'
     implementation 'org.postgresql:postgresql:42.5.4'
 }
 

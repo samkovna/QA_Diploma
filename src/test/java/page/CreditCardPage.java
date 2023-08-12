@@ -39,7 +39,7 @@ public class CreditCardPage {
     private SelenideElement forExpiredLastYear = $(byText("Истёк срок действия карты"));
     private SelenideElement requiredField = $(byText("Поле обязательно для заполнения"));
 
-    public void successfulPayment() {
+    public void successPayment() {
         successNotification.shouldBe(visible, Duration.ofSeconds(15));
     }
 
