@@ -44,14 +44,6 @@ public class DataHelper {
         return LocalDate.now().plusYears(6).format(DateTimeFormatter.ofPattern("yy"));
     }
 
-    public static String getIncompleteYear() {
-        return LocalDate.now().format(DateTimeFormatter.ofPattern("y"));
-    }
-
-    public static String getIncompleteMonth() {
-        return LocalDate.now().format(DateTimeFormatter.ofPattern("M"));
-    }
-
     static Faker faker = new Faker(new Locale("en"));
 
     public static String getName() {
@@ -59,7 +51,7 @@ public class DataHelper {
     }
 
     public static String getCVC() {
-        return Integer.toString(faker.number().numberBetween(001, 999));
+        return Integer.toString(faker.number().numberBetween(100, 999));
     }
 
     @Value
@@ -84,7 +76,7 @@ public class DataHelper {
     }
 
     public static Card getCardIncompleteMonth() {
-        return new Card(getApprovedCardNumber(), getIncompleteMonth(), getNextYear(), getName(), getCVC());
+        return new Card(getApprovedCardNumber(), "8", getNextYear(), getName(), getCVC());
     }
 
     public static Card getCardNullMonth() {
@@ -96,7 +88,7 @@ public class DataHelper {
     }
 
     public static Card getCardIncompleteYear() {
-        return new Card(getApprovedCardNumber(), getCurrentMonth(), getIncompleteYear(), getName(), getCVC());
+        return new Card(getApprovedCardNumber(), getCurrentMonth(), "4", getName(), getCVC());
     }
 
     public static Card getCardExpiredLastYear() {

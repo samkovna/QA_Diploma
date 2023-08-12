@@ -9,13 +9,14 @@ import java.time.Duration;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$x;
 
 public class PaymentCardPage {
     private SelenideElement formPayment = $(byText("Купить"));
     private SelenideElement cardNumberField = $("[placeholder='0000 0000 0000 0000']");
     private SelenideElement monthField = $("[placeholder='08']");
     private SelenideElement yearField = $("[placeholder='22']");
-    private SelenideElement ownerField = $(By.xpath("Владелец"));
+    private SelenideElement ownerField = $x("//*[contains(text(), 'Владелец')]/../*/input");
     private SelenideElement cvcField = $("[placeholder='999']");
     private SelenideElement continueButton = $(byText("Продолжить"));
 
