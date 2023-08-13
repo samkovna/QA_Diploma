@@ -20,6 +20,7 @@
 1. https://github.com/samkovna/QA_Diploma/blob/18f94258766b084097a0b2d13fdffc9dfc5ce18d/documentation/Plan.md?plain=1#L202
 
 Выполнено вовремя
+
 2. https://github.com/samkovna/QA_Diploma/blob/18f94258766b084097a0b2d13fdffc9dfc5ce18d/documentation/Plan.md?plain=1#L203
 
 Фактически выполнено раньше (12.08.23)
