@@ -16,12 +16,12 @@
 **Запуск приложения и автотестов**
 1. Для поднятия вспомогательных сервисов выполнить в терминале команду `docker-compose up`
 2. Запустить SUT в терминале
-* для mySQL с помощью команды `java -jar aqa-shop.jar`
-* для PostgreSQL с помощью команды `java "-Dspring.datasource.url=jdbc:postgresql://localhost:5432/postgres" -jar artifacts/aqa-shop.jar`
+* для mySQL с помощью команды `java -jar ./artifacts/aqa-shop.jar`
+* для PostgreSQL с помощью команды `java "-Dspring.datasource.url=jdbc:postgresql://localhost:5432/app" -jar artifacts/aqa-shop.jar`
 3. Проверить запущенное приложение по [адресу](http://localhost:8080)
 4. Запустить автотесты в терминале 
 * для mySQL с помощью команды `./gradlew clean test`
-* для PostgreSQL с помощью команды `./gradlew clean test -DdbUrl=jdbc:postgresql://localhost:5432/postgres`
+* для PostgreSQL с помощью команды `./gradlew clean test -DdbUrl=jdbc:postgresql://localhost:5432/app`
 
 ## Формирование отчета Allure
 После завершения всех автотестов в терминале ввести команду `./gradlew allureServe`
